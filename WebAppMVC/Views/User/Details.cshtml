@@ -1,0 +1,90 @@
+﻿@model WebAppMVC.Models.User
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>User</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.UserFName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserFName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserMName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserMName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserLName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserLName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserMobNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserMobNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserEmailId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserEmailId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserAltNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserAltNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserPanNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserPanNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserAdhNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserAdhNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SourceChannelId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SourceChannelId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.UserId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

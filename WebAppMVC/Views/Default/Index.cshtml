@@ -1,0 +1,87 @@
+﻿@model IEnumerable<WebAppMVC.Models.UserViewModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.UserId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserFName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserMName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserLName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserMobNo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserEmailId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserAltNo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserPanNo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserAdhNo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SourceChannelId)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.UserId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UserFName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UserMName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UserLName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UserMobNo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UserEmailId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UserAltNo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UserPanNo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UserAdhNo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SourceChannelId)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new {  id=item.UserId  }) |
+            @*@Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |*@
+            @Html.ActionLink("Delete", "Delete", new { id = item.UserId }, new { onclick="return confirm('Are you sure to delete?')"})
+        </td>
+    </tr>
+}
+
+</table>
