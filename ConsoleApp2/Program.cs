@@ -4,7 +4,7 @@ using System.Web.Script.Serialization; // requires the reference 'System.Web.Ext
 using System.IO;
 using System.Text;
 
-namespace ConsoleApp2
+namespace ConsoleApp
 {
    
     class WaPdfGroupSender
